@@ -226,7 +226,6 @@ body * {
     font-weight: 400;
     font-size: 18px;
     line-height: 25px;
-    text-transform: uppercase;
 }
 
 .selector {
@@ -601,7 +600,7 @@ input[type='checkbox']:checked:after {
 
 .hero-menu {
     background-image: url('../images/bg_menu.png');
-    max-height: 864px;
+    height: 864px;
     margin-top: 242px;
 }
 
@@ -658,5 +657,119 @@ input[type='checkbox']:checked:after {
 
 .showcase-right > img {
     margin-bottom: 36px;
+}
+
+.clients-container {
+    margin-top: 111px;
+    margin-bottom: 100px;
+}
+
+.empty-space {
+    /* height: 354px; */
+    height: 254px;
+    background-image: url('../images/bg_feedback.png');
+    background-repeat: repeat;
+    background-size: 100% 100%;
+}
+
+.h3-clients {
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #181818;
+}
+
+.clients-description {
+    margin-top: 24px;
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 29px;
+    text-align: center;
+
+    color: #363636;
+}
+
+.client-feedbacks {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.client-profile {
+    display: flex;
+    align-items: center;
+}
+
+.client-pic {
+    border-radius: 50%;
+}
+
+.client-name {
+    margin-left: 26px;
+    max-width: 178px;
+    max-height: 42px;
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: #181818;
+}
+
+.client-feedback {
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 180%;
+    color: #959595;
+
+    width: 324px;
+    height: 239px;
+    
+    margin-top: 24px;
+}
+
+.clients-feedback-container {
+    width: 376px;
+    height: 455px;
+}
+
+.client-order-info {
+    display: flex;
+    
+}
+
+.info-highlight {
+    background-color: #E3B873;
+    display: flex;
+    align-items: center;
+    height: 54px;
+}
+
+.info-space {
+    width: 135px;
+    margin-right: 1px;
+}
+
+.info-date {
+    width: 157px;
+}
+
+.client-info-icon {
+    margin-left: 15px;
+}
+
+.client-info-text {
+    text-transform: uppercase;
+    margin-left: 14px;
+    margin-right: 14px;
 }
 
