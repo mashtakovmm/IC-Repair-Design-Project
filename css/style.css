@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@0;1&display=swap');
 
+  
 body{
     margin: 0px;
     font-family: Nunito Sans, Arial;
@@ -15,6 +16,13 @@ body * {
     margin: 0px auto;
 }
 
+@media only screen and (max-width: 1300px) {
+    .container {
+        margin-left: 18px;
+        margin-right: 18px;
+    }
+}
+
 .bg-dark-color {
     background-color: #131313;
 }
@@ -26,6 +34,7 @@ body * {
     height: 83px;
     align-items: center;
 }
+
 
 .button {
     border-radius: 2px;
@@ -50,15 +59,44 @@ body * {
 
 .logo {
     color: #E3B873;
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 15px;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 1300px) {
+    .logo {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 15px;
+        text-transform: uppercase;
+    }
 }
 
 .phone-number{
     color: #E3B873;
 }
 
+@media only screen and (max-width: 1300px) {
+    .phone-number {
+        font-family: 'Nunito Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 15px;
+        text-align: right;
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+}
+
 .header-button {
-    width: 161px;
-    height: 37px;
+    max-width: 161px;
+    max-height: 51px;
 
     font-family: 'Nunito Sans';
     font-style: italic;
@@ -69,19 +107,38 @@ body * {
     text-transform: uppercase;
 }
 
+@media only screen and (max-width: 1300px) {
+    .button-hide {
+        display: none;
+    }
+}
+
+
 .header-nav {
     list-style: none;
     display: flex;
+}
+
+@media only screen and (max-width: 1300px) {
+    .header-nav {
+        display: none;
+    }
 }
 
 .header-nav-item {
     margin-right: 47px;
 }
 
+
 .nav-a {
     color: white;
     text-decoration: none;
 }
+
+.nav-a:hover {
+    color: #E3B873;
+}
+
 
 
 .hero {
@@ -108,6 +165,14 @@ body * {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+@media only screen and (max-width: 1300px) {
+    .hero-container {
+        flex-direction: column;
+        align-items: center;
+        margin-top: -85px;
+    }
 }
 
 .title {
@@ -143,18 +208,34 @@ body * {
     text-transform: uppercase;
 }
 
+@media only screen and (max-width: 1300px) {
+    .hero-title {
+        font-family: 'Nunito Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 29px;
+        line-height: 135.84%;
+    }
+}
+
 .hero-normal-text {
     font-weight: 400;
     font-size: 22px;
     line-height: 36px;
 }
 
+@media only screen and (max-width: 1300px) {
+    .hero-normal-text {
+        font-weight: 400;
+        font-size: 21px;
+        line-height: 135.84%;
+    }
+}
+
 .button-hero {
     width: 207px;
     height: 51px;
     margin-right: 20px;
-
-
 }
 
 .button-transperent {
@@ -170,6 +251,22 @@ body * {
 
 .hero-button-container {
     display: flex;
+}
+
+@media only screen and (max-width: 1300px) {
+    .button-hero {
+        min-width: 339px;
+        min-height: 70px;
+        margin-right: 0px;
+        margin-bottom: 26px;
+        margin-top: 32px;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .hero-button-container {
+        flex-direction: column;
+    }
 }
 
 .projects {
@@ -193,6 +290,12 @@ body * {
     width: 679px;
 }
 
+@media only screen and (max-width: 1300px) {
+    .projects-list {
+        display: none;
+    }
+}
+
 .projects-list-item {
     color: white;
     text-decoration: none;
@@ -212,8 +315,15 @@ body * {
     justify-content: space-between;
 }
 
+@media only screen and (max-width: 1300px) {
+    .projects-data {
+        flex-direction: column;
+    }
+}
+
 .projects-data-text {
-    max-width: 442px;
+    width: 331px;
+    align-self: center;
 }
 
 .h2 {
@@ -227,10 +337,15 @@ body * {
     letter-spacing: -0.07em;
     text-transform: uppercase;
 }
-/* 
-.projects-h2 {
-} */
 
+@media only screen and (max-width: 1300px) {
+    .projects-h2 {
+        text-align: center;
+        width: 253px;
+        height: 66px;
+        margin-left: 40px;
+    }
+}
 
 .projects-description {
     margin-bottom: 42px;
@@ -241,6 +356,15 @@ body * {
     line-height: 27px;
 }
 
+@media only screen and (max-width: 1300px) {
+    .projects-description {
+        text-align: center;
+        margin: 0px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 158.48%;
+    }
+}
 .project-info-grid {
     display: flex;
     flex-direction:  row;
@@ -250,6 +374,15 @@ body * {
 .project-info-container {
     display: flex;
     flex-direction: column;
+}
+
+@media only screen and (max-width: 1300px) {
+    .project-info-grid {
+        margin-top: 136px; 
+    }
+    .space-info {
+        margin-top: 45px;
+    }
 }
 
 .info-text {
@@ -277,8 +410,53 @@ body * {
     margin-right: auto;
 }
 
+@media only screen and (max-width: 1300px) {
+    .selector  {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .project-example  {
+        display: none;
+    }
+}
+
 .online-control-section {
     margin-top: -400px;
+}
+
+.project-example-mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 1300px) {
+    .project-example-mobile {
+        display: inline;
+        min-width: 400px;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .mobile-project-img {
+        min-width: 400px;
+        margin-left: -35px;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .arrows {
+        margin-top: -200px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .arrow-right {
+        -webkit-transform:rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
 }
 
 .control-title {
@@ -297,13 +475,38 @@ body * {
     justify-content: center;
 }
 
+@media only screen and (max-width: 1300px) {
+    .online-control-section {
+        background-color: #131313;
+    }
+}
+
 .h3-control {
     margin-top: 0px;
     color: white;
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 138.6%;
+}
+
+@media only screen and (max-width: 1300px) {
+    .h3-control {
+        margin-top: 56px;
+        font-size: 30px;
+    }
+    .camera-icon {
+        -moz-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+        -o-transform: scale(1.5);
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5);    
+    }
 }
 
 .video-preview {
-    filter: brightness(40%);
+    filter: brightness(25%);
     max-width: 817px;
     max-height: 434px;
 }
@@ -313,8 +516,33 @@ body * {
     margin-top: -270px;
 }
 
+@media only screen and (max-width: 1300px) {
+    .video-preview {
+        margin-left: 18px;
+        margin-right: 18px;
+        max-width: 400px;
+        max-height: 434px;
+    }
+
+    .video-button {
+        z-index: 1;
+        margin-top: -180px;
+        -moz-transform: scale(0.7);
+        -ms-transform: scale(0.7);
+        -o-transform: scale(0.7);
+        -webkit-transform: scale(0.7);
+        transform: scale(0.7);   
+    }
+}
+
 .divider {
     margin-top: 237px;
+}
+
+@media only screen and (max-width: 1300px) {
+    .divider {
+        margin-top: 56px;
+    }
 }
 
 .control-text{
@@ -328,6 +556,16 @@ body * {
     color: #363636;
 }
 
+@media only screen and (max-width: 1300px) {
+    .control-text {
+        font-size: 18px;
+        line-height: 169.8%;
+        /* or 19px */
+        text-align: center;
+        color: #FFFFFF;
+    }
+}
+
 .form{
     display: flex;
     justify-content: space-between;
@@ -336,7 +574,7 @@ body * {
     margin-top: 91px;
 }
 
-.label{
+.label {
     display: flex;
     flex-direction: column;
     margin-right: 59px;
@@ -421,6 +659,44 @@ input[type='checkbox']:checked:after {
     /* or 23px */
     color: #181818;
   }
+
+  @media only screen and (max-width: 1300px) {
+    .form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 400px;
+        flex-wrap:wrap;
+        margin-top: 61px;
+    }
+
+    .label {
+        display: flex;
+        flex-direction: column;
+        margin-right: 0px;
+    }
+
+    .label-text {
+        font-size: 16px;
+        color: rgba(255, 255, 255, 0.5);
+    }
+    
+    .input {
+        font-size: 16px;
+        line-height: 23px;
+        height: 25px;
+        outline: 0;
+        border-width: 0 0 1px;
+        border-color: white;
+        background-color: transparent;
+    }
+
+    .input::placeholder {
+        color: white;
+
+    }
+}
+
 
 .h3-repairs {
     margin-top: 72px;
@@ -942,4 +1218,10 @@ input[type='checkbox']:checked:after {
     font-size: 11px;
     line-height: 15px;
     text-transform: uppercase;
+}
+
+@media only screen and (max-width: 1300px) {
+    .hide-in-mobile {
+        display: none;
+    }
 }
