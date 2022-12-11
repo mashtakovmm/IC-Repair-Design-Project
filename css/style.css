@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@0;1&display=swap');
+
 body{
     margin: 0px;
     font-family: Nunito Sans, Arial;
@@ -51,6 +54,19 @@ body * {
 
 .phone-number{
     color: #E3B873;
+}
+
+.header-button {
+    width: 161px;
+    height: 37px;
+
+    font-family: 'Nunito Sans';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 15px;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .header-nav {
@@ -109,11 +125,22 @@ body * {
 
 .hero-text {
     max-width: 504px;
-    font-family: 'Nunito Sans', 'Times New Roman', Times, serif;
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 36px;
+
+    color: #FFFFFF;
 }
 
 .hero-title {
-    font-size: 44px;
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 53px;
+    text-transform: uppercase;
 }
 
 .hero-normal-text {
@@ -126,6 +153,8 @@ body * {
     width: 207px;
     height: 51px;
     margin-right: 20px;
+
+
 }
 
 .button-transperent {
@@ -674,6 +703,11 @@ input[type='checkbox']:checked:after {
     margin-bottom: 36px;
 }
 
+.clients {
+    z-index: 2;
+    position: relative;
+}
+
 .clients-container {
     margin-top: 111px;
     margin-bottom: 100px;
@@ -801,7 +835,7 @@ input[type='checkbox']:checked:after {
     height: 445px;
     margin: -223px auto 0;
     background-color: #181818;
-    z-index: 100;
+    z-index: inherit;
 }
 
 .contact-label {
@@ -847,7 +881,65 @@ input[type='checkbox']:checked:after {
 }
 
 .map-section {
-    height: 954px;
+    height: 1040px;
     margin-top: -230px;
-    background: linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%);
+    padding-top: 0px;
+    z-index: 1;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.9) 3.47%, rgba(24, 24, 24, 0.8) 100%), url('../images/bg_map.png');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+
+.h2-contat-info {
+    max-width: 589px;
+    max-height: 51px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    
+    color: #E3B873;
+}
+
+.contant-info {
+    display: flex;
+    flex-direction: column;
+    padding-top: 275px;
+    align-items: center;
+    margin-bottom: 28px;
+}
+
+.social-links {
+    width: 71px;
+    height: 28px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0px;
+}
+
+.map {
+    z-index: 100;
+    margin-top: 43px;
+}
+
+.google-map {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+
+.header {
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 15px;
+    text-transform: uppercase;
 }
