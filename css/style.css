@@ -1389,4 +1389,8 @@ input[type='checkbox']{
         justify-content: space-between;
         width: 120px;
     }
+
+    .h2-mobile {
+        text-align: center;
+    }
 }
