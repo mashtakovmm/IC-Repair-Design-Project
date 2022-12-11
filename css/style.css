@@ -32,6 +32,12 @@ body * {
     font-style: italic;
     outline: 0px;
     padding: 13px 33px;
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 27px;
+    text-align: center;
 }
 
 .button-colored {
@@ -126,6 +132,15 @@ body * {
     background-color: Transparent;
     border: solid 1px;
     border-color: white;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 15px;
+    text-align: center;
+}
+
+.hero-button-container {
+    display: flex;
 }
 
 .projects {
@@ -662,11 +677,12 @@ input[type='checkbox']:checked:after {
 .clients-container {
     margin-top: 111px;
     margin-bottom: 100px;
+    z-index: 1;
 }
 
 .empty-space {
     /* height: 354px; */
-    height: 254px;
+    height: 354px;
     background-image: url('../images/bg_feedback.png');
     background-repeat: repeat;
     background-size: 100% 100%;
@@ -773,3 +789,65 @@ input[type='checkbox']:checked:after {
     margin-right: 14px;
 }
 
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 34px 183px;
+}
+
+.contact-form {
+    width: 883px;
+    height: 445px;
+    margin: -223px auto 0;
+    background-color: #181818;
+    z-index: 100;
+}
+
+.contact-label {
+    margin-top: 46px;
+    margin-right: 0px;
+}
+
+.h4-questions {
+    margin-bottom: 0px;
+    margin-top: 34px;
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+}
+
+.contact-input {
+    background-color: #181818;
+}
+
+.name-phone-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.submit-button { 
+    width: 200px;
+    height: 51px;
+    margin-top: 50px;
+
+}
+
+.submit-button-wraper {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 34px;
+}
+
+.map-section {
+    height: 954px;
+    margin-top: -230px;
+    background: linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%);
+}
