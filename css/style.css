@@ -643,22 +643,22 @@ input[type='checkbox']{
     text-align: center;
     line-height: 1em;
     background: #E3B873;
-  }
-  
-input[type='checkbox']:checked:after {
-    content: '✔';
-    color: white;
-  }
+    }
+    
+    input[type='checkbox']:checked:after {
+        content: '✔';
+        color: white;
+    }
 
-.checkbox-text {
-    font-family: 'Nunito Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 163.68%;
-    /* or 23px */
-    color: #181818;
-  }
+    .checkbox-text {
+        font-family: 'Nunito Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 163.68%;
+        /* or 23px */
+        color: #181818;
+    }
 
   @media only screen and (max-width: 1300px) {
     .form {
@@ -689,14 +689,61 @@ input[type='checkbox']:checked:after {
         border-width: 0 0 1px;
         border-color: white;
         background-color: transparent;
+        margin-bottom: 60px;
     }
 
     .input::placeholder {
         color: white;
+    }
 
+    input[type='checkbox']{
+        width: 18px !important;
+        height: 18px !important;
+        margin-right: 9px;
+        margin-top: -3px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -o-appearance: none;
+        appearance: none;
+        outline: none;
+        box-shadow: none;
+        font-size: 0.8em;
+        text-align: center;
+        line-height: 1em;
+        background: #E3B873;
+      }
+      
+    input[type='checkbox']:checked:after {
+        content: '✔';
+        color: white;
+      }
+    
+    .checkbox-text {
+        font-size: 14px;
+        line-height: 163.68%;
+        /* or 23px */
+        color: white;
+        margin-top: -5px;
+      }
+      
+    .checkbox-label {
+        flex-basis: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .form-button {
+        width: 390px;
+        height: 51px;
+        align-self: center;
+        font-size: 20px;
+        line-height: 27px;
+
+        margin-top: 62px;
+        margin-bottom: 20px;
     }
 }
-
 
 .h3-repairs {
     margin-top: 72px;
@@ -778,6 +825,49 @@ input[type='checkbox']:checked:after {
     text-transform: uppercase;
 
     color: #FFFFFF;
+}
+
+@media only screen and (max-width: 1300px) {
+    .h3-repairs {
+        margin-top: 58px;
+        font-size: 30px;
+    }
+    
+    .icon-container {
+        margin-top: 17px;
+        margin-bottom: 40px;
+        -moz-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+        -o-transform: scale(1.5);
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5);    
+    }
+    
+    .repairs-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .repairs-card {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 80px;
+        width: 340px;
+    }
+    
+    .repairs-content {
+        padding: 25px 68px 49px 34px;
+        margin-top: -127px;
+        background-color: white;
+    
+        width: 330px;
+        height: 286px;
+        margin-left: 0px;
+        padding-left: 0px;
+    }
 }
 
 .contact-container {
@@ -918,6 +1008,55 @@ input[type='checkbox']:checked:after {
     padding-bottom: 70px;
 }
 
+.mobile-example-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mobile-showcase-img {
+    width: 400px;
+    margin-bottom: -40px;
+}
+
+.showcase-arrows {
+    margin-top: -70px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -23px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.mobile-map-section {
+    background-color: #131313;
+}
+
+.empty-mobile {
+    /* height: 354px; */
+    height: 175px;
+}
+
+.mobile-map-h3 {
+    text-align: center;
+    color: white;
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.checkbox-label-questions {
+    margin-top: -35px;
+}
+
+.button-questions {
+    margin-top: 40px;
+}
+
 .hero-menu {
     background-image: url('../images/bg_menu.png');
     height: 864px;
@@ -928,7 +1067,6 @@ input[type='checkbox']:checked:after {
     display: flex;
     flex-direction: row;
 }
-
 
 .h2-menu {
     margin-top: -90px;
@@ -1189,6 +1327,12 @@ input[type='checkbox']:checked:after {
     margin-bottom: 28px;
 }
 
+.contant-info-mobile {
+    padding-top: 0px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
 .social-links {
     width: 71px;
     height: 28px;
@@ -1196,6 +1340,8 @@ input[type='checkbox']:checked:after {
     justify-content: space-between;
     margin-top: 0px;
 }
+
+
 
 .map {
     z-index: 100;
@@ -1210,7 +1356,6 @@ input[type='checkbox']:checked:after {
     filter: grayscale(100%);
 }
 
-
 .header {
     font-family: 'Nunito Sans';
     font-style: normal;
@@ -1220,8 +1365,28 @@ input[type='checkbox']:checked:after {
     text-transform: uppercase;
 }
 
+.hide-in-desktop {
+    display: none;
+}
+
 @media only screen and (max-width: 1300px) {
     .hide-in-mobile {
         display: none;
+    }
+    .hide-in-desktop {
+        display: inherit;
+    }
+
+    .large-icon-sl {
+        -moz-transform: scale(2);
+        -ms-transform: scale(2);
+        -o-transform: scale(2);
+        -webkit-transform: scale(2);
+        transform: scale(2);   
+    }
+
+    .social-links {
+        justify-content: space-between;
+        width: 120px;
     }
 }
